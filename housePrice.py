@@ -1,5 +1,4 @@
-import pdb
-
+mport pdb
 
 import pandas as pd
 from sklearn.datasets import fetch_california_housing
@@ -46,6 +45,8 @@ user_input = np.array(user_input).reshape(1, -1)
 # Make a prediction using the trained model
 
 prediction = model.predict(user_input)
-
-
-print(f'Predicted House Price: ${prediction[0]:,.2f}')
+#pdb.set_track()
+if(prediction<0):
+   print("incorrect inputs.Out Of range")
+else:
+   print(f'Predicted House Price: ${prediction[0]:,.2f}')
