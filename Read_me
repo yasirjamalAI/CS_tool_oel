@@ -1,0 +1,23 @@
+
+The script california_housing_prediction.py performs the following tasks:
+
+Data Loading: Loads the California housing dataset from scikit-learn's datasets module and converts it into a pandas DataFrame.
+Data Preprocessing: Splits the dataset into features (X) and the target variable (y). Then, further splits the data into training and testing sets using scikit-learn's train_test_split.
+Model Training: Utilizes scikit-learn's LinearRegression class to train a linear regression model on the training data.
+Model Evaluation: Makes predictions on the test set and evaluates the model's performance using mean squared error.
+Prediction on New Instance: Takes input from the user for the features of a new instance and predicts its housing price using the trained model.
+Usage
+To run the code:
+Ensure you have Python installed on your system.
+Install the required libraries using pip install -r requirements.txt.
+Run the script california_housing_prediction.py.
+Follow the prompts to enter values for each feature of the new instance.
+The script will output the predicted house price based on the provided input.
+Files
+california_housing_prediction.py: The main Python script containing the code for data loading, preprocessing, model training, evaluation, and prediction.
+requirements.txt: A text file listing the required Python libraries and their versions.
+Libraries Used
+pandas: Data manipulation and analysis.
+scikit-learn: Machine learning library for model training, evaluation, and prediction.
+Note
+The model assumes that the input features are within a reasonable range. If any input is out of range (e.g., negative values), it will prompt a message indicating incorrect inputs.
